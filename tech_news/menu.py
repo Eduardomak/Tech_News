@@ -28,9 +28,8 @@ def switch(string):
 
     if not string.isnumeric() or int(string) < 0 or int(string) > 7:
         print(ValueError("Opção inválida"), file=sys.stderr)
-
-    for _ in dict_switch:
-        print(dict_switch[_])
+    elif int(string) >= 0 and int(string) <= 4:
+        print(dict_switch[string])
 
 
 def analyzer_menu():
